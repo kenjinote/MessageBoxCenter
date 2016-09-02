@@ -33,7 +33,7 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT msg, WPARAM wParam, LPARAM lParam)
 	switch (msg)
 	{
 	case WM_CREATE:
-		hButton = CreateWindow(TEXT("BUTTON"), TEXT("変換"),
+		hButton = CreateWindow(TEXT("BUTTON"), TEXT("メッセージボックスを表示"),
 			WS_VISIBLE | WS_CHILD, 0, 0, 0, 0, hWnd, (HMENU)IDOK,
 			((LPCREATESTRUCT)lParam)->hInstance, 0);
 		break;
